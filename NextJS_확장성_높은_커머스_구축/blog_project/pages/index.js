@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,26 +12,17 @@ export default function Home() {
       </Head>
 
       <main>
+        {/* <img src="/images/myname.png" alt="name" /> */}
         <h1 className={styles.title}>
           Read this Post{" "}
           <Link href="posts/first-post">
             <a>첫번째 글</a>
           </Link>
         </h1>
-        <h1 className={styles.title}>
-          Read this Post{" "}
-          <a href="posts/first-post">
-            <a>첫번째 글(a tag)</a>
-          </a>
-        </h1>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -64,6 +56,8 @@ export default function Home() {
       <Link href="posts/second-post">
         <a>두번째 글</a>
       </Link>
+      <Image src="/images/myname.png" alt="name" width={140} height={140} />
+
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

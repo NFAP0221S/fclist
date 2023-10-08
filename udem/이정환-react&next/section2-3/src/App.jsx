@@ -1,20 +1,16 @@
 import './App.css'
-
-function Header() {
-  return (
-    <header>
-      <h1>HEADER</h1>
-    </header>
-  );
-}
+import Body from './components/Body';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
       <Header />
-      <h1>안녕 리액트</h1>
+      <Body />
+      <Footer />
     </>
   );
 }
 
-export default App
+export default App;

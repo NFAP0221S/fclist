@@ -1,10 +1,19 @@
-import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { fetchCountry } from "../api";
 
 export default function Country() {
   const params = useParams();
-  console.log(params);
+  const [country, setCountry] = useState();
 
-  return (
-    <div>Country : {params.code}</div>
-  )
+  const setInitData = async () => {
+    const data = await fetchCountry(params.code);
+    setCountry(data);
+  };
+
+  useEffect(() => {
+    setInitData();
+  }, [params.code]);
+
+  return <div>Country : {params.code}</div>;
 }

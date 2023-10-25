@@ -1,3 +1,7 @@
 export default function New() {
-  return <h1>Post New Page</h1>;
+  return (
+    <>
+      <div>Post Form</div>
+    </>
+  );
 }

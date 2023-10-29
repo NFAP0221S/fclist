@@ -1,6 +1,6 @@
 import PostDetail from "@components/PostDetail";
 
-export default function PostPage() {
+export default function PostsPageDetail() {
   return (
     <>
       <PostDetail />

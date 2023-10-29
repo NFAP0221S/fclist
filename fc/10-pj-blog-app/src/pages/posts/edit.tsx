@@ -1,3 +1,9 @@
-export default function Edit() {
-  return <h1>Post Edit Page</h1>;
+import PostForm from "@components/PostForm";
+
+export default function PostsPageEdit() {
+  return (
+    <>
+      <PostForm />
+    </>
+  );
 }

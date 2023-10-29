@@ -1,6 +1,6 @@
 import PostForm from "@components/PostForm";
 
-export default function New() {
+export default function PostsPageNew() {
   return (
     <>
       <PostForm />

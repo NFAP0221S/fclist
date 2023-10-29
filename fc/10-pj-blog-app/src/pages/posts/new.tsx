@@ -1,7 +1,9 @@
+import PostForm from "@components/PostForm";
+
 export default function New() {
   return (
     <>
-      <div>Post Form</div>
+      <PostForm />
     </>
   );
 }

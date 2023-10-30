@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "firebaseApp": ["./firebaseApp.ts"]
     },
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -25,6 +26,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "firebaseApp.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

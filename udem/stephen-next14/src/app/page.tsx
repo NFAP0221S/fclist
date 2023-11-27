@@ -7,6 +7,6 @@ export default function Home() {
       imgData={homeImg}
       imgAlt="car factory"
       title="Professional Cloud Hosting"
-    ></Hero>
+    />
   );
 }

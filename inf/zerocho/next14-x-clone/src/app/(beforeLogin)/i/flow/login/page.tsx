@@ -1,6 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import LoginModal from "@/app/(beforeLogin)/_component/LoginModal";
 
-export default function LoginPage() {
-  return <div>login page</div>;
+export default function Page() {
+  return (
+    <LoginModal />
+  );
 }

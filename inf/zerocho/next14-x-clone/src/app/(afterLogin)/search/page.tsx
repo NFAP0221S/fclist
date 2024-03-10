@@ -2,5 +2,5 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function SearchPage() {
-  return <div>search page</div>;
+  return <main>검색페이지</main>;
 }

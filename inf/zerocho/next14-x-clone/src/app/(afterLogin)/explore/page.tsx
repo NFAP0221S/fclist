@@ -2,5 +2,5 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function ExplorePage() {
-  return <div>explore page</div>;
+  return <main>탐색페이지</main>;
 }
